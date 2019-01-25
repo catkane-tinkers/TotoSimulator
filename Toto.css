@@ -26,8 +26,8 @@ body {
 }
 
 #Title {
-    position: fixed;
-    top: 22.8vh;
+    position: relative;
+    top: -6%;
 
     font-size: 40px;
     background: linear-gradient(to bottom, #A9E4DE 60%, #ECC0B1 40%);
@@ -44,8 +44,6 @@ body {
 
     background-color: #ECC0B1;
     box-shadow: 0 7.5px 30px 1px #504b4b86;
-
-    overflow: hidden;
 
     display: flex;
     flex-direction: column;
