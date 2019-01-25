@@ -3,11 +3,11 @@ Toto Simulator
 
 <b>Tools Used</b>
 
-Python (for initial tests), <br>
-JavaScript, <br>
-Regex, <br>
-HTML, <br>
-CSS, <br>
+Python (for initial tests) <br>
+JavaScript <br>
+Regex <br>
+HTML <br>
+CSS <br>
 
 <b>Understanding the Mechanics</b>
 
