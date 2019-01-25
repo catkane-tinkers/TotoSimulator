@@ -227,7 +227,7 @@ function updateResults(string) {
     var PNL = (prizeGroup[0] * 1000000 + prizeGroup[1] * 80000 + prizeGroup[2] * 55000 + 
         prizeGroup[3] * 30000 + prizeGroup[4] * 50 + prizeGroup[5] * 25 + prizeGroup[6] * 10) - (runs * playerBet.length)
 
-    context.fillText('You made: '.concat(PNL).concat(' in total!'), 175, canvas_height * 0.15);
+    context.fillText('Profit: $'.concat(PNL), 175, canvas_height * 0.15);
 
     context.font = "15px Arial";
 
