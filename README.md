@@ -13,7 +13,7 @@ Understanding the Mechanics
 Toto is a game of probability. The winning numbers (6 + 1 additional number) are generated at random and to win, players must match 3 or more numbers.
 
 
-Code for Program
+<b>Code for Program</b>
 
 To generate numbers, I first wrote a range function in JavaScript, which was then used to create an array with numbers from 1 − 49 (inclusive).
 
