@@ -50,7 +50,7 @@ body {
     justify-content: center;
     align-items: center;
 
-    position: fixed;
+    position: relative;
     top: 25vh;
 }
 
