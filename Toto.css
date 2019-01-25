@@ -26,8 +26,8 @@ body {
 }
 
 #Title {
-    position: sticky;
-    top: 27.5vh;
+    position: fixed;
+    top: 22.8vh;
 
     font-size: 40px;
     background: linear-gradient(to bottom, #A9E4DE 60%, #ECC0B1 40%);
@@ -52,7 +52,7 @@ body {
     justify-content: center;
     align-items: center;
 
-    position: sticky;
+    position: fixed;
     top: 25vh;
 }
 
