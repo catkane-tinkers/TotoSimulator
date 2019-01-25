@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Toto.css">
+
+<body>
+<div class="Showcase">
+    <div id="Console">
+        <div id="Screen">
+            <canvas id="Results" width="350" height="350"></canvas>
+        </div>
+        <div id="InputSpace">
+            <textarea id=Bet placeholder="Key in bet(s) here"></textarea>
+            <div class="Buttons">
+                <div class="Simulations">
+                    <input id="Cycles" type='text' placeholder="Number of Simulations"></input>
+                    <div id="Checkbox">
+                        <input type='checkbox' onchange="toggleDisabled(this.checked)" id="Jackpot"></input>
+                        <label for="Jackpot">Simulate until Jackpot</label>
+                    </div>
+                </div>
+                <input id="Start" type='button' value="Start!" onclick="toggleButton()"></input>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="WriteUp">
+        <h1><u>Toto Simulator</u></h1>
+        <br>
+        <p>While doing my Statistics Studies, I got intrigued at the probability of winning Toto. Scouring the Web, I found a lot of posts about using Combinatorics to calculate the probability of winning. I then decided to write up a short program that will put to test the theory of having 1/53 chance of winning. </p><br>
+        <h2><u>Tools Used</u></h2><br>
+        <ol>
+            <li>JavaScript</li>
+            <li>Regex</li>
+            <li>HTML</li>
+            <li>CSS</li>
+        </ol><br>
+        <h2><u>Process</u></h2><br>
+        <ol>
+            <li>Understanding the Mechanics</li>
+            <li>Code for Program</li>
+            <li>General Remarks</li>
+        </ol><br>
+        <h2><u>Understanding the Mechanics</u></h2><br>
+        <p>Toto is a game of probability. The winning numbers (6 + 1 additional number) are generated at random and to win, players must match 3 or more numbers.</p><br>
+        <h2><u>Code for Program</u></h2><br>
+        <p>To generate numbers, I first wrote a range function in JavaScript, which was then used to create an array with numbers from 1 &minus; 49 (inclusive). <small> I didn't want to type out 49 digits. Seriously, why doesn&#39;t JavaScript have a range function?</small></p><br>
+        <p>JavaScript&#39;s Math.random function (increasing the spread to 49) was used to pick out random numbers by index. After each pick, the number is popped from the array, to ensure the probability is fair throughout the process. The randomly picked numbers are saved in another array for comparison with the user&#39;s bet. </p><br>
+        <p>Regex is used to filter out the user's input. Separate bets using "[ ]," is completely unnecessary, the program can fully function even if the user keys in just a long string of digits. This is done so that users will have an easier time identifying their bets.</p><br>
+        <p>Comparing the user&#39;s bet and the winning numbers is just a simple if &minus; else iteration, to save some processing power, each element is checked against the entire array, instead of one to one.</p><br>
+        <p>Initial processing using the setInterval function in JavaScript proved to be too slow, and using just a while loop made the entire page hang while it went through upwards of 10 million simulations. Hence, to speed up processing, while simultaneously update the screen to ensure users that the program is running, comparisons are done in batches of 12347. This is an arbituary number that I chose, but avoiding a number such as &quot;5&quot as the last digit allowed the numbers to running more akin to if it is running the comparison one at a time.</p><br>
+        <h2><u>General Remarks</u></h2><br>
+        <p>The prize pool is set at a constant of 1 Million, please take "Profits" with a grain of salt. It truly is interesting to note that any arbituary numbers have an equal chance of winning (~1.8%). I also did a breakdown on the current state of Toto, do check it out if you are interested.</p><br>
+</div>
+
+</body>
+
+<script src="Toto.js"></script>
+
+</html>
