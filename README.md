@@ -8,12 +8,6 @@ Regex
 HTML
 CSS
 
-Process
-
-Understanding the Mechanics
-Code for Program
-General Remarks
-
 Understanding the Mechanics
 
 Toto is a game of probability. The winning numbers (6 + 1 additional number) are generated at random and to win, players must match 3 or more numbers.
