@@ -1,14 +1,15 @@
 # TotoSimulator
 Toto Simulator
 
-Tools Used
+<b>Tools Used</b>
 
+Python (for initial tests)
 JavaScript
 Regex
 HTML
 CSS
 
-Understanding the Mechanics
+<b>Understanding the Mechanics</b>
 
 Toto is a game of probability. The winning numbers (6 + 1 additional number) are generated at random and to win, players must match 3 or more numbers.
 
@@ -30,6 +31,6 @@ Comparing the user's bet and the winning numbers is just a simple if − else it
 Initial processing using the setInterval function in JavaScript proved to be too slow, and using just a while loop made the entire page hang while it went through upwards of 10 million simulations. Hence, to speed up processing, while simultaneously update the screen to ensure users that the program is running, comparisons are done in batches of 12347. This is an arbituary number that I chose, but avoiding a number such as "5" as the last digit allowed the numbers to running more akin to if it is running the comparison one at a time.
 
 
-General Remarks
+<b>General Remarks</b>
 
 The prize pool is set at a constant of 1 Million, please take it with a grain of salt. It truly is interesting to note that any arbituary numbers have an equal chance of winning (~1.8%). I also did a breakdown on the current state of Toto, do check it out if you are interested.
