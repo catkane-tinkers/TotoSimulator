@@ -90,7 +90,7 @@ body {
     overflow: hidden;
 }
 
-textarea#Bet {
+#Bet {
     height: 65%;
     width: 97%;
 
