@@ -1,0 +1,193 @@
+* {
+    margin: 0;
+}
+
+::-webkit-scrollbar { 
+    display: none; 
+}
+
+@font-face {
+    font-family:"BentonSans-B";
+    src:url("https://use.typekit.net/af/3e4c93/00000000000000003b9b2d1a/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3") format("woff2"),url("https://use.typekit.net/af/3e4c93/00000000000000003b9b2d1a/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3") format("woff"),url("https://use.typekit.net/af/3e4c93/00000000000000003b9b2d1a/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3") format("opentype");
+    font-style:normal;font-weight:700;
+    }
+
+@font-face {
+    font-family:"BentonSans";
+    src:url("https://use.typekit.net/af/7b8b5a/00000000000000003b9b2d09/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3") format("woff2"),url("https://use.typekit.net/af/7b8b5a/00000000000000003b9b2d09/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3") format("woff"),url("https://use.typekit.net/af/7b8b5a/00000000000000003b9b2d09/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3") format("opentype");
+font-style:normal;font-weight:700;
+}
+
+div.LeftNav {
+    font-family: 'BentonSans-B';
+    position: fixed; 
+    top: 1.2vw; 
+    left: 1.2vw;
+    text-align: center; 
+    font-size: 1vmax
+}
+
+div.RightNav {
+    font-family: 'BentonSans-B';
+    position: fixed; 
+    top: 2vw; 
+    right: 1.2vw;
+    text-align: center; 
+    font-size: 1vmax
+}
+
+
+body {
+    background-color: #A9E4DE;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: stretch;
+}
+
+div.Showcase {
+    width: 40%;
+    min-height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+div#Console {
+    width: 350px;
+    height: 500px;
+
+    border: solid;
+    border-radius: 15px;
+
+    background-color: #ECC0B1;
+    box-shadow: 0 2.5px 15px 2.5px #504b4b;
+
+    overflow: hidden;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    position: sticky;
+    top: 25vh;
+}
+
+div#Screen {
+    width: 100%;
+    height: 350px;
+
+    border-bottom: solid;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+div#InputSpace {
+    width: 100%;
+    height: 150px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+div.InputsHolder {
+    height: 70%;
+    width: 100%;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    overflow: hidden;
+}
+
+textarea#Bet {
+    height: 65%;
+    width: 97%;
+
+    resize: none;
+
+    margin-top: 1%;
+    outline: 0;
+}
+
+div.Buttons {
+    height: 35%;
+    width: 100%;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+div.Simulations {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: flex-start;
+}
+
+div#Checkbox {
+    width: 100%;
+    height: 10%;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center; 
+}
+
+input#Start {
+    height: 85%;
+    width: 45%;
+
+    outline: 0;
+
+    border-width: 2px;
+}
+
+div.WriteUp {
+    width: 60%;
+    min-height: 100vh;
+
+    background-color: #FFE3BD;
+
+    border-left: solid;
+    padding-top: 2%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+div.WriteUp > p, ol {
+    width: 65%;
+    text-indent: 3%;
+    
+    margin: 1%;
+}
+
+@media screen and (max-width: 800px) {
+    body {
+      flex-direction: column;
+    }
+    div.WriteUp, div.Showcase {
+      width: 100%;
+      border: none;
+    }
+    div#Console {
+        position: relative;
+    }
+  }
