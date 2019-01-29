@@ -12,12 +12,21 @@
             <canvas id="Results" width="350" height="350"></canvas>
         </div>
         <div id="InputSpace">
-            <textarea id=Bet placeholder="Key in bet(s) here"></textarea>
+            <div id="Bets">
+                <textarea id=Bet placeholder="Key in bet(s) here"></textarea>
+                <div id="SystemBox">
+                    <div id="Checkbox">
+                        <input type='checkbox' onchange="toggleDisabled(this.checked, 2)" id="SystemCheckBox"></input>
+                        <label for="SystemCheckBox">System Bet</label>
+                    </div>
+                    <input id="betLength" placeholder="Not Applicable" disabled></input>
+                </div>
+            </div>
             <div class="Buttons">
                 <div class="Simulations">
                     <input id="Cycles" type='text' placeholder="Number of Simulations"></input>
                     <div id="Checkbox">
-                        <input type='checkbox' onchange="toggleDisabled(this.checked)" id="Jackpot"></input>
+                        <input type='checkbox' onchange="toggleDisabled(this.checked, 1)" id="Jackpot"></input>
                         <label for="Jackpot">Simulate until Jackpot</label>
                     </div>
                 </div>
