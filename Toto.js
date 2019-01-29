@@ -275,7 +275,7 @@ function checkUserInput(string, betLength) {
     var minirun = 0;
     var bet = [];
     var pass = true;
-    if (betLength > 12 || betLength < 7) {
+    if (betLength > 12 || betLength < 6) {
         pass = false;
         printOnScreen('System Bets only go from 7 - 12.')
     }
