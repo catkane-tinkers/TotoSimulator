@@ -88,9 +88,21 @@ body {
     overflow: hidden;
 }
 
+#Bets {
+    width: 99%;
+    height: 70%;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    overflow: hidden;
+}
+
 #Bet {
-    height: 65%;
-    width: 97%;
+    width: 70%;
+    height: 100%;
 
     resize: none;
 
@@ -98,8 +110,24 @@ body {
     outline: 0;
 }
 
+#SystemBox {
+    width: 30%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+
+    overflow: hidden;
+}
+
+#betLength {
+    width: 90%;
+}
+
+
 .Buttons {
-    height: 35%;
+    height: 30%;
     width: 100%;
 
     display: flex;
