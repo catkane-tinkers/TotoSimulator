@@ -15,8 +15,10 @@
             <div id="Bets">
                 <textarea id=Bet placeholder="Key in bet(s) here"></textarea>
                 <div id="SystemBox">
+                        <div class="quickpick" onclick="quickPick()">QuickPick</div>
                     <div id="Checkbox">
                         <input type='checkbox' onchange="toggleDisabled(this.checked, 2)" id="SystemCheckBox"></input>
+                        
                         <label for="SystemCheckBox">System Bet</label>
                     </div>
                     <input id="betLength" placeholder="Not Applicable" disabled></input>
@@ -31,6 +33,7 @@
                     </div>
                 </div>
                 <input id="Start" type='button' value="Start!" onclick="toggleButton()"></input>
+                
             </div>
         </div>
     </div>
